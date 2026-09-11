@@ -1,0 +1,14 @@
+.footer-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212 !important;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
+}

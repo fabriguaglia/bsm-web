@@ -1,0 +1,90 @@
+.accesorios-page-container {
+  font-family: 'Arial', sans-serif;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+.tracking-wide {
+  letter-spacing: 1.5px;
+}
+
+.max-w-600 {
+  max-width: 600px;
+}
+
+.hero-img-box {
+  max-height: 350px;
+}
+
+.hero-img-box img {
+  height: 350px;
+}
+
+/* Tarjeta individual de categoría */
+.accessory-card {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accessory-card:hover {
+  transform: translateY(-6px);
+  border-color: #d32f2f !important;
+  box-shadow: 0 10px 25px rgba(211, 47, 47, 0.2);
+}
+
+.card-image-box {
+  height: 200px;
+  background-color: #000;
+}
+
+.card-image-box img {
+  transition: transform 0.5s ease;
+}
+
+.accessory-card:hover .card-image-box img {
+  transform: scale(1.08);
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Adaptación Mobile */
+@media (max-width: 767.98px) {
+  .hero-img-box,
+  .hero-img-box img {
+    height: 240px;
+  }
+
+  .card-image-box {
+    height: 180px;
+  }
+
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+}

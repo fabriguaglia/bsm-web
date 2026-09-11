@@ -1,0 +1,164 @@
+.hero-landing-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  overflow-x: hidden;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+/* Hero Content con Imagen de Fondo */
+.hero-content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 520px;
+}
+
+/* Overlay Oscuro para legibilidad */
+.hero-overlay {
+  background: linear-gradient(
+    90deg, 
+    rgba(0, 0, 0, 0.75) 0%, 
+    rgba(0, 0, 0, 0.45) 50%, 
+    rgba(0, 0, 0, 0.20) 100%
+  );
+}
+
+/* Sombreado de Texto para alto contraste */
+.hero-title, 
+.hero-subtitle, 
+.cta-group {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.hero-title {
+  line-height: 1.1;
+}
+
+.tracking-wide {
+  letter-spacing: 1.5px;
+}
+
+/* Carrusel Infinito de Marcas */
+.brands-carousel-section {
+  width: 100%;
+  position: relative;
+  background-color: #ffffff !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.brands-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-brands 20s linear infinite;
+  background-color: #ffffff !important;
+  border: none !important;
+}
+
+.brands-track:hover {
+  animation-play-state: paused;
+}
+
+.brand-slide {
+  flex-shrink: 0;
+  width: 180px;
+  background-color: #ffffff !important;
+  border: none !important;
+}
+
+.brand-logo {
+  max-width: 120px;
+  max-height: 50px;
+  object-fit: contain;
+  filter: none;
+  opacity: 1;
+  border: none !important;
+  outline: none !important;
+}
+
+@keyframes scroll-brands {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+/* Secciones Generales */
+.section-padding {
+  padding: 5rem 0;
+}
+
+.image-card-wrapper {
+  max-height: 380px;
+}
+
+/* Sección de Redes Sociales (Fondo Blanco) */
+.social-banner-section {
+  background-color: #ffffff !important;
+}
+
+.max-w-600 {
+  max-width: 600px;
+}
+
+.social-card {
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.social-card:hover {
+  background-color: #e9ecef;
+  border-color: #d32f2f !important;
+  transform: translateY(-3px);
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Ajustes Responsive Móvil */
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+
+  .hero-content {
+    min-height: 440px;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .brands-carousel-section {
+    margin: 0 !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
