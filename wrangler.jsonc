@@ -1,11 +1,10 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "bsm-web",
-  "compatibility_date": "2026-09-11",
-  "observability": {
-    "enabled": true
-  },
+  "name": "falling-queen-ed00",
+  "compatibility_date": "2026-09-12",
+  "main": "worker.js",
   "assets": {
-    "directory": "build"
+    "directory": "./build",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
   }
 }
